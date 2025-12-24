@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Merry Christmas</title>
+  <link rel="stylesheet" href="greet.css">
+</head>
+<body>
+ <audio id="myAudio">
+      <source src="christmas.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div class="music-control">
+      <button onclick="document.getElementById('myAudio').play()">
+        ▶ Play Music
+      </button>
+    </div>
+  <!-- Snow (background only) -->
+  <div class="snow"></div>
+
+  <div class="container">
+    <button id="openBtn">🎄 Open Christmas Letter 🎄</button>
+
+    <div class="envelope" id="envelope">
+      <div class="flap"></div>
+
+      <div class="letter">
+        <h1>🎅 Merry Christmas! 🎄</h1>
+        <p>
+I’m so grateful for you and the friendship we share.<br> Thank you for always being there and for making life a little <br>brighter just by being you. I hope this Christmas brings you peace,<br> happiness, and all the love you deserve. 🎄✨<br>
+        </p>
+        <span>✨ Warmest Wishes ✨</span>
+      </div>
+
+      <div class="body"></div>
+    </div>
+  </div>
+
+  <script src="greets.js"></script>
+</body>
+</html>
